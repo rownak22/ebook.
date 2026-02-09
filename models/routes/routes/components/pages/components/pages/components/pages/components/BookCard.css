@@ -9,4 +9,120 @@
 
 .book-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.book-cover {
+    height: 200px;
+    overflow: hidden;
+}
+
+.book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.book-cover:hover img {
+    transform: scale(1.05);
+}
+
+.book-info {
+    padding: 1.5rem;
+}
+
+.book-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    cursor: pointer;
+}
+
+.book-title:hover {
+    color: #3498db;
+}
+
+.book-author {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.book-description {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.book-genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.genre-tag {
+    background-color: #e8f4fc;
+    color: #3498db;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.book-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.book-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.read-btn, .download-btn, .favorite-btn {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.read-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.read-btn:hover {
+    background-color: #2980b9;
+}
+
+.download-btn {
+    background-color: #27ae60;
+    color: white;
+}
+
+.download-btn:hover {
+    background-color: #219653;
+}
+
+.favorite-btn {
+    background-color: #f8f9fa;
+    color: #e74c3c;
+    font-size: 1.2rem;
+}
+
+.favorite-btn:hover {
+    background-color: #e8e8e8;
+}
